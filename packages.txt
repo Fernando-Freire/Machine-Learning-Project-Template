@@ -1,0 +1,4 @@
+curl
+libgomp1
+git
+gcc

@@ -1,0 +1,12 @@
+notebooks/.Trash-1000
+notebooks/model.pkl
+notebooks/.ipynb_checkpoints
+
+
+.mypy_cache/
+
+.vscode/
+
+
+
+*pycache__
