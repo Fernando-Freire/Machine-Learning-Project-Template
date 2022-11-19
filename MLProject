@@ -7,9 +7,6 @@ entry_points:
 # Embedding types currently available 
 # bow
 # tf-idf
-# Word2Vec
-# Doc2Vec
-# FastText
 # 
 #
 # Model types currently available

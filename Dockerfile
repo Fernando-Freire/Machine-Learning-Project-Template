@@ -3,11 +3,11 @@
 ################################################################################
 
 # Use Python 3.10-slim
-FROM python:3.10.4 AS base
+FROM python:3.10.8 AS base
 
 ENV PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=off \
-    POETRY_VERSION=1.1.13 \
+    POETRY_VERSION=1.2.2 \
     POETRY_VIRTUALENVS_CREATE=false \
     POETRY_CACHE_DIR=/usr/src/poetry_cache/
 
@@ -39,7 +39,7 @@ RUN poetry install  --no-interaction --no-ansi --no-root --no-dev
 
 # Install Jupyter packages
 ADD requirements_jupyter.txt ./
-RUN pip install -r requirements_jupyter.txt
+RUN pip install jupyter ipywidgets matplotlib
 
 # Add all notebooks to the container
 ADD ./notebooks ./
